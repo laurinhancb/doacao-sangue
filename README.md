@@ -3,7 +3,7 @@
 
 #### Ele calcula a partir da data de cadastro quando o usuário poderá realizar uma nova doação.
 
-#### O objetivo desse projeto é conhecer mais o funcionamento de outras linguagens de programação, como PHP e JavaScript. A IA auxiliou nesse processo e explicou como funciona os comando das linguagens os quais eu não conhecia.
+#### O objetivo desse projeto é conhecer mais o funcionamento de outras linguagens de programação, como PHP e JavaScript. A IA auxiliou nesse processo e explicou como funciona os comandos das linguagens os quais eu não conhecia.
 
 ### Linguagens utilizadas:
  - HTML
