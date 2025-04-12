@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #970110;
+    color: #ffffff;
+}
+
+.container {
+    width: 900px;
+    max-width: 100%;
+    border: 1px solid #3f1313;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ESTILOS UNIFICADOS PARA TODOS OS CAMPOS */
+input, select, button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+/* ESTILOS ESPECÍFICOS */
+input, select {
+    border: 1px solid rgb(71, 71, 71);
+    background-color: transparent;
+    color: rgb(71, 71, 71);
+    margin-bottom: 5px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+h1, a, p {
+    color: rgb(184, 44, 44);
+}
+
+/* ELEMENTOS DO FORMULÁRIO */
+.form-group {
+    margin-bottom: 30px;
+}
+
+.single-line {
+    grid-column: 1 / -1;
+}
+
+.double-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+}
+
+/* ESTADOS INTERATIVOS */
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select option {
+    background-color: #a30010;
+    color: white;
+    padding: 12px;
+}
+
+select option[value=""] {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+::placeholder {
+    color: rgb(185, 153, 153);
+    opacity: 1;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+    
+    .double-line {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    input, select, button {
+        padding: 12px;
+        height: 44px;
+        font-size: 15px;
+    }
+    
+    select {
+        background-position: right 12px center;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
