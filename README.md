@@ -1,4 +1,4 @@
-# doacao-sangue
+# Sistema de cadastro de doação de sangue
 #### Esse projeto foi criado sem fins acadêmicos para simular um sistema de cadastro e login para agendar uma doação de sangue.
 
 #### Ele calcula a partir da data de cadastro quando o usuário poderá realizar uma nova doação.
